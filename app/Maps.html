@@ -1,0 +1,76 @@
+---
+title: Maps
+layout: ./app/Maps.ejs
+engine: ejs
+current: index
+---
+
+<div class="mainBar">
+    
+    <div class="Flex">
+
+        <div class="searchBar mr16">
+            
+            
+            <i class="fas fa-search"
+                id="SearchCafeIcon"></i>
+            <p>|</p>
+            
+            <input 
+            type="text" 
+            name="" 
+            class="map-search"
+            id="map-search-input"> 
+
+        </div>    
+
+        <div class="min-userPhoto">
+            <img src="./assets/images/NewUser.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div id="ChangetoClickBtn" class="ChangetoClickBtn d-none">
+        <div class="sortBar p15 web_ShopInfoIcon FWC">
+            <ul>
+                <li class ="btLine">
+                    <div class="sortBarBtn" id ="socket">
+                    <i class="fas fa-bolt"></i>
+                    <p>提供插座</p>
+                    
+                </li>
+        
+                <li class ="btLine">
+                    <div class="sortBarBtn" id ="quiet">
+                    <i class="fas fa-comment-slash"></i>
+                    <p>環境安靜</p>
+                </li>
+        
+                <li class ="btLine">
+                    <div class="sortBarBtn" id ="limit_time">
+                    <i class="fas fa-hourglass-half"></i>
+                    <p>不限時間</p>
+                </li>
+        
+                <li class ="btLine">
+                    <div class="sortBarBtn" id ="wifi">
+                    <i class="fas fa-wifi"></i>
+                    <p>Free wifi</p>
+                </li>
+            </ul>
+
+            <i class="far fa-times-circle" id="ClosesortBarBtn"></i>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div id="map">
+</div>
+
+<script src="./assets/js/toMemberMain.js"></script>

@@ -1,0 +1,94 @@
+
+.member-box{
+
+    min-width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-info{
+
+    h2{margin-bottom: $mp40;}
+
+    h3{margin-bottom: $mp20;}
+
+    p{margin-bottom: $mp20;}
+
+}
+
+//user
+.showUserBox{
+    margin-bottom: $mp24;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        margin-bottom: $mp16;
+    }
+
+}
+
+.userPhoto{
+    width: 80px;
+    height: 80px;
+    border-radius:  100%;
+    
+    // margin-bottom: $mp16;
+    
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    
+    img{
+        width: 100%;    
+    }
+}
+
+.min-userPhoto{
+    width: 40px;
+    height: 40px;
+
+    border-radius:  100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    img{
+        width: 100%;
+    }
+}
+
+
+//MemberReviewBox
+
+.MemberReviewBox{
+
+    display: flex;
+
+    margin-left: 6rem;
+
+    min-width: 240px;
+    height: 80%;
+    overflow: auto;  
+
+}
+
+.MemberReviewBoxWrap{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    li{
+    margin-right: $mp20;
+    margin-left:  $mp24;
+    }
+}

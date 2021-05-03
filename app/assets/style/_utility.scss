@@ -1,0 +1,230 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+html,body {
+font-family: 
+"Noto Sans",
+"Noto Sans TC",
+"Noto Sans CJK TC";
+
+color: $l_gray;
+
+}
+    
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $l_gray;
+}
+
+li{
+    list-style:none;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
+
+.hide{
+overflow: hidden;
+}
+
+
+
+//文字樣式
+
+h1{
+    font-family: $CJK-TC;
+    font-size: $font-xl;
+    line-height: 2.5rem;
+}
+
+h2{
+    font-family: $TC;
+    font-size: $font-l;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+h3{
+    font-family: $TC;
+    font-size: $font-m;
+    font-weight: "SemiBold";
+}
+
+p{
+    font-family: $N;
+    font-size: $font-m;
+    line-height: $mp20;
+}
+
+.hint{
+    font-family: $N;
+    font-size: $font-s;
+    letter-spacing: 5%;
+
+    span{
+        color: $black;
+    }
+}
+
+.point{
+    color: $m_gray;
+    font-size: 2px;
+}
+
+.tag{
+    font-family: $N;
+    font-size: $font-s;
+    font-weight: Medium;
+    letter-spacing: 0.05rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+input{
+    outline: none;
+}
+
+.line{
+    border-left: 1px solid $l_gray;
+   
+}
+
+.titleType{
+
+    width: 90%;
+
+    h1{
+        margin-bottom: $mp4;
+    }
+
+    h3{
+        font-family: $CJK-TC;
+        margin-bottom: $mp20;
+    }    
+}
+
+.m0auto{
+    margin: 0 auto;
+}
+
+.btLine{
+    border-bottom: 1px solid $l_gray;
+    margin-bottom: $mp16;
+}
+
+.w100{
+    width: 100%;
+}
+
+//分隔
+.mb4  {margin-bottom: $mp4 ;} 
+.mb8  {margin-bottom: $mp8 ;} 
+.mb12 {margin-bottom: $mp12;} 
+.mb16 {margin-bottom: $mp16;} 
+.mb20 {margin-bottom: $mp20;} 
+.mb24 {margin-bottom: $mp24;} 
+.mb32 {margin-bottom: $mp32;} 
+.mb36 {margin-bottom: $mp36;} 
+.mb40 {margin-bottom: $mp40;} 
+.mb44 {margin-bottom: $mp44;} 
+.mb48 {margin-bottom: $mp48;} 
+
+.p15{
+    padding: 15%;
+}
+
+.mr16{
+    margin-right: $mp16;
+}
+
+.mt24{
+    margin-top: $mp24;
+}
+.ml24{
+    margin-left: $mp24;
+}
+
+
+
+
+
+//FLEX
+.FlexCC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Flex{
+    display: flex;
+}
+
+.FdcJcc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FdcAllCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FWC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.FdCR{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.w65{
+    width: 65%;
+}
+
+
+
+
+
+// 以下開始為響應式
+@media (max-width: 850px){
+
+    .cafe-img{
+        display: none;
+    }
+
+    .member-info{
+        display: none;
+    }
+
+    .CafeWebDnone{
+        display: none;
+    }
+
+    .CafeMobileDnone{
+        display: block;
+    }
+    
+
+
+} 

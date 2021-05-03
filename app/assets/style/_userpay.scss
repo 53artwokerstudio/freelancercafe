@@ -1,0 +1,27 @@
+.user-pay-box{
+
+    display: flex;
+    margin: 5rem  0;
+
+}
+
+
+.userpayList{
+    width: 100%;
+    font-family: $TC;    
+    margin: 0 $mp32 ;
+
+    li{
+        padding-bottom: $mp16;
+    }
+
+    .fa-times{
+        padding-right: $mp16;
+    }
+}
+
+.fa-check{
+    padding-right: $mp16;
+}
+
+

@@ -1,0 +1,96 @@
+---
+title: MemberMainEdit
+layout: ./app/member.ejs
+engine: ejs
+current: index
+---
+<div class="FlexCC line w65">
+
+<div class="member-box">
+<!-- 
+    <h2>Freelancer</br>CAFE'</h2> -->
+
+    <form action="#">
+
+    <div class="showUserBox">
+    
+        <div class="userPhoto" id="UserMainPhoto" >
+            <img src="./assets/images/NewUser.jpg"/>
+        </div>
+
+        <h2 id="originalName">Alston</h2>
+    </div>
+
+    <p class="hint">User Photo</p>
+    
+    <div class="upload-Box">
+        <div class="upload-Bar">
+
+            <form action="/somewhere/to/upload" 
+            enctype="multipart/form-data">
+            
+               
+                <input type="file" 
+                        id="file-uploader" 
+                        data-target="file-uploader" 
+                        accept="image/*"/>
+
+          
+            </form>
+        </div>
+
+        <div class="upload-Btn">
+            <i class="fas fa-arrow-circle-up"></i>
+            <p>確認上傳</p>
+        </div>
+    </div>
+    
+  
+    <div class="input-box">
+        <label for="emailadd">
+            <p class="hint">User Name</p>
+        </label>
+        <input 
+        type="email"
+        name="email"
+        id="old-username" 
+        class="input-style"
+        placeholder="請輸入新名稱">
+    </div>
+    
+    <div class="input-box">
+        <label for="password">
+            <p class="hint">Last Password</p>
+        </label>
+        <input 
+        type="password"
+        name="password"
+        id="old-password" 
+        class="input-style"
+        placeholder="請輸入舊密碼">
+    </div>
+
+    <div class="input-box">
+        <label for="password">
+            <p class="hint">New Password</p>
+        </label>
+        <input 
+        type="password"
+        name="password"
+        id="new-password" 
+        class="input-style"
+        placeholder="請輸入新密碼">
+    </div>
+  
+        <input  type="button" 
+                value="完成編輯" 
+                class="login-btn" 
+                id="EditDoneBtn">
+
+    </div>
+
+     
+
+     
+
+

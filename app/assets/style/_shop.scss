@@ -1,0 +1,282 @@
+//商店
+
+.ShopInfoAll{
+    
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    margin: $mp16 $mp20;
+
+
+    h2{
+        margin-bottom: $mp24;
+    }
+
+    p{
+        margin-bottom:  $mp24 ;
+    }
+
+    i{
+        font-size: $font-l;
+    }
+
+}
+
+
+.web_ShopInfoIcon{
+    
+    li{
+        display: flex;
+        
+    }
+
+    i{
+        display: flex;
+        justify-content: center;
+
+        margin-right: $mp24;
+        width: 24px;
+    }
+}
+
+.ShopInfoIcon{
+   
+
+    i{
+        padding-right: $mp24;
+    }
+}
+   
+
+.ShopSetIcon{
+    
+    
+    padding-top: $mp8;
+    
+    i{
+        display: block;
+        margin-left: $mp24;
+    }
+
+}
+
+.ReviewBtn{
+    
+    display: flex; 
+    justify-content: center;
+    
+    
+
+    i{
+        padding-right: $mp8;
+    }
+
+    p{ 
+        padding-top: $mp4;
+    }
+ 
+
+
+    
+ 
+}
+
+//_________________
+//評論
+.ShopInfoText{
+    
+    h3{
+        margin-bottom: $mp24;
+        font-weight: bold;
+    }
+}
+
+.tagList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $mp24;
+}
+
+.tagStyle{
+
+    border: 1px solid #F3F3EF;
+    border-radius: 5px;
+    padding: $mp4;
+
+    margin-right: $mp8;
+    margin-bottom: $mp8;
+}
+
+.tagStyleHit{
+
+    border: 1px solid #F3F3EF;
+    border-radius: 5px;
+    padding: $mp4;
+
+    background-color: $l_gray;
+    color: $black;
+
+    margin-right: $mp8;
+    margin-bottom: $mp8;
+}
+
+.MemberUserPhoto{
+    width: 60px;
+    height: 60px;
+    border-radius:  100%;
+    
+    margin-bottom: $mp16;
+    margin-right: $mp16;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    
+    img{
+        width: 100%;
+ 
+    }
+}
+
+
+.shopOverBox{
+    min-width: 240x;
+    max-height: 385px;
+    overflow: auto;  
+
+}
+
+
+
+.MemberReview{
+
+    display: flex;
+    justify-content: space-between;
+
+
+    li{
+        margin: $mp8;
+
+        p{
+
+            font-size: $font-s;
+        }
+    }
+}
+
+.ReviewBox{
+    // background-color: salmon;
+    min-height: 330px;
+}
+
+.ReviewText{
+   width: 224px;
+
+   h3{
+       margin-bottom: $mp8;
+   }
+}
+
+.EditReviewBox{
+
+    li{
+        margin-bottom: $mp16;
+
+        h2{
+            margin-bottom: $mp16;
+        }
+
+        i{
+            padding-right: $mp16;
+        }
+    }
+
+}
+
+.EditReviewText{
+    min-width: 600px;
+    min-height: 400px;
+    background-color: $l_gray;
+    border-radius: 5%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border: none;
+
+
+}
+
+.NewReviewText{
+    min-width: 240px;
+    min-height: 300px;
+    background-color: $l_gray;
+    border-radius: 5%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border: none;
+}
+
+.fa-pen{
+    font-size: $font-s;
+}
+
+
+
+
+
+
+//_________________
+
+//關閉視窗
+.closeWebBox{
+
+position: relative;
+left: 850px;
+z-index: -1;
+
+width: 100px;
+height: 100px;
+background-color: #fff;
+
+ i{
+     display: flex;
+     flex-direction: row-reverse;
+
+     padding-top: 8px;
+     padding-right: 8px;
+
+    //  font-size: $font-m;
+     color: $black;
+ }
+}
+
+
+.closeMobileBox{
+
+position: relative;
+z-index:-1;
+
+top: 100px;
+left: 124.5px;
+
+width: 100px;
+height: 100px;
+
+ background-color: #fff;
+
+ i{
+     display: flex;
+     flex-direction: row-reverse;
+
+     padding-top: 8px;
+     padding-right: 8px;
+
+    //  font-size: $font-m;
+     color: $black;
+ }
+}
+//_________________
+//InfoHave
+.InfoHave{opacity:1;}
+
+.InfoNotHave{opacity:0.3;}

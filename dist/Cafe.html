@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- scss -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"/>
+    <!-- axios -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.js' integrity='sha512-Kg0CewqPNO/ziOJuCq5eyl3P/V6OLz/Lb1I2m+yKS3lHZcGVFN/KOew18rWP+kTsL7haYdaqGjwHQCZrN0heLQ==' crossorigin='anonymous'></script>
+
+    <title>FreelancerCafe - Cafe</title>
+</head>
+
+<body>
+
+ <div class="mask">
+
+        <!-- 網頁版顯示部分 -->
+<div class="CafeWebDnone">
+
+    <div class="cafe-web-box">
+
+        <div class="forCloseBox">
+            <div class="closeWebBox">
+                <i class="fas fa-times"  id="CafeMaincloseWebBox"></i>
+            </div>
+        </div>
+
+        <div class="cafe-img" id="CafeImg">
+        <img src="./assets/images/cafe-img.png" alt="">
+        </div>
+    
+        <div class="box FWC">
+    
+            <div class="shopBox">
+                        
+                <div class="ShopInfoAll FdcJcc">
+    
+                    <div class="Flex ShopInfo">
+    
+                        <ul class="ShopInfoText" id="ShopInfoTextId">
+                            <li><h2>自由人咖啡廳</h2></li>
+                            <li><p>高雄市楠梓區裕昌街312號1樓</p></li>
+                            <li><p>10:00 — 21:00</p></li>
+
+                            <li class="btLine"></li>
+                            
+                            <li>
+                                <ul class="web_ShopInfoIcon">
+                                <li>
+                                    <i class="fas fa-bolt"></i>
+                                    <p>提供插座</p>
+                                    
+                                </li>
+    
+                                <li>
+                                    <i class="fas fa-comment-slash"></i>
+                                    <p>環境安靜</p>
+                                </li>
+    
+                                <li>
+                                    <i class="fas fa-hourglass-half"></i>
+                                    <p>不限時間</p>
+                                </li>
+    
+                                <li>
+                                    <i class="fas fa-wifi"></i>
+                                    <p>Free wifi</p>
+                                </li>
+    
+                                </ul> 
+                            </li>
+    
+                        </ul>
+    
+                    <ul class="Flex ShopSetIcon">
+    
+                            <li>
+                                <i class="fas fa-directions"></i>
+                            </li>
+                            
+                            <li id="LikeIcon" class="">
+                                <i class="far fa-heart"></i>
+                            </li>
+                            
+                            <li id="UnLikeIcon" class="d-none">
+                                <i class="fas fa-heart"></i>
+                            </li>  
+                            
+                    </ul>
+                    
+                    </div>
+    
+                    <a href="./Cafe_Review.html" class="ReviewBtn">
+                        <i class="fas fa-chevron-down"></i>
+                        <p class="hint">REVIEW</p>
+                    </a>
+    
+    
+                </div>
+            
+                
+    
+            </div>
+    
+            
+        </div>
+    
+    </div>
+
+</div>
+
+
+<!-- ____________________________________________ -->
+
+
+<!-- 手機版顯示部分 -->
+<div class="CafeMobileDnone d-none">
+
+    <div class="MobileBox FdcAllCenter">
+
+        <div class="closeMobileBox">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <div class="box hide">
+            
+            <div class="shopBox">
+                
+                <img src="./assets/images/cafe-img.png" alt="">
+                
+                
+                <div class="ShopInfoAll">
+    
+                    
+                    <div class="Flex ShopInfo">
+                        <ul class="ShopInfoText">
+                            <li><h2>自由人咖啡廳</h2></li>
+                            <li><p>高雄市楠梓區裕昌街312號1樓</p></li>
+                            <li><p>10:00 — 21:00</p></li>
+                            
+                            <li>
+                                <ul class="Flex ShopInfoIcon">
+                                <li><i class="fas fa-bolt"></i></li>
+                                <li><i class="fas fa-comment-slash"></i></li>
+                                <li><i class="fas fa-hourglass-half"></i></li>
+                                <li><i class="fas fa-wifi"></i></li>
+                            </ul> 
+                            </li>
+    
+                        </ul>
+    
+                        <ul class="Flex ShopSetIcon">
+                            <i class="fas fa-directions"></i>
+                            <i class="far fa-heart"></i>
+                        </ul>
+                    </div>
+    
+                    <a href="#" class="ReviewBtn">
+                        <i class="fas fa-chevron-down"></i>
+                        <p class="hint">REVIEW</p>
+                    </a>
+    
+    
+                </div>
+            
+                
+    
+            </div>
+    
+    
+         <!-- ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ -->
+    
+    
+    
+    
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+        
+</div>
+
+<div class="blur">
+    <div id="map"></div>
+</div>
+
+    
+<script src="./assets/js/maps.js"></script>
+<script src="./assets/js/Cafe.js"></script>
+<script src="./assets/js/Cafe_FavCafe.js"></script>
+<script src="./assets/js/Cafe_NearbyList.js"></script>
+<script src="./assets/js/Cafe_Review.js"></script>
+<script src="./assets/js/Cafe_AddReview.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUqlo7FVQDhF2QZfRkoonNdvmhXDZQmJ4&callback=initMap"></script>
+
+
+</body>
+</html>

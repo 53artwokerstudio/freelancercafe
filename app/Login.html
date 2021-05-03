@@ -1,0 +1,82 @@
+---
+title: Login
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="login-box">
+    
+    <div class="titleType">
+    <h1>Freelancer<br>CAFE’</h1>
+    <h3>Login</h3>
+    </div>
+    
+    <form action="#">
+  
+    <div class="input-box">
+        <label for="emailadd">
+            <p class="hint">Email Address</p>
+        </label>
+        <input 
+        type="email"
+        name="email"
+        id="login-emailadd" 
+        class="input-style"
+        placeholder="請輸入信箱">
+    </div>
+    
+    <div class="input-box">
+        <label for="password">
+            <p class="hint">password</p>
+        </label>
+        <input 
+        type="password"
+        name="password"
+        id="login-password" 
+        class="input-style"
+        placeholder="請輸入密碼">
+  
+        <a href="#">
+            <p class="hint forget-password">
+                Forget your password ?
+            </p>
+        </a>
+    </div>
+  
+        <input type="button" value="Login" class="login-btn">
+  
+        <p>Don’t have an account? 
+            <a href="./SignUp.html" class="bold">Sign up</a>
+        </p>
+  
+        <div class="mb24 mt24 btLine"></div>
+  
+        <div class="pass-sing-up">
+            <a href="./Maps.html">略過註冊 <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+  
+    </form>
+  
+  </div>
+  
+      <!-- ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ -->
+  
+  </div>
+  </div>
+  
+  </div>
+  
+  <div class="blur">
+  <div id="map"></div>
+  </div>
+      
+      
+      
+  
+  
+  
+  <script src="./assets/js/login.js"></script>
+
+

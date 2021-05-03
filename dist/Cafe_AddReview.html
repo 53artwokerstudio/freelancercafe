@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- scss -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"/>
+    <!-- axios -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.js' integrity='sha512-Kg0CewqPNO/ziOJuCq5eyl3P/V6OLz/Lb1I2m+yKS3lHZcGVFN/KOew18rWP+kTsL7haYdaqGjwHQCZrN0heLQ==' crossorigin='anonymous'></script>
+
+    <title>FreelancerCafe - Cafe_Review</title>
+</head>
+
+<body>
+
+ <div class="mask">
+
+        <!-- 網頁版顯示部分 -->
+<div class="CafeWebDnone">
+
+    <div class="cafe-web-box">
+
+        <div class="forCloseBox">
+            <div class="closeWebBox" >
+                <i class="fas fa-times" id="ReviewCloseWebBox"></i>
+            </div>
+        </div>
+
+        <div class="cafe-img" id="AddReviewSingleCafeImg">
+        <img src="./assets/images/cafe-img.png" alt="">
+        </div>
+    
+        <div class="box FWC">
+    
+            <ul class="FdcAllCenter EditReviewBox">
+
+                <ul class="FdcAllCenter" id ="">
+
+                    <li><h2 id="AddReviewCafeName">自由人咖啡廳</h2></li>
+                    <li><p id="">新增評價</p></li>
+                   
+
+                
+        
+                <li>
+                    
+                    <input 
+                    type="text" 
+                    name="" 
+                    id="inputNewMsg"
+                    value=""
+                    placeholder="請輸入新留言"
+                    class="NewReviewText">
+                
+                </li>
+                </ul>
+        
+        
+                <li class="member-btn" id="PostNewMemberMsgBtn">
+                    <i class="fas fa-pen"></i>
+                   <p>送出評論</p> 
+                </li>
+            
+            </ul>
+    
+            
+        </div>
+    
+    </div>
+
+</div>
+
+
+<!-- ____________________________________________ -->
+
+
+<!-- 手機版顯示部分 -->
+<div class="CafeMobileDnone d-none">
+
+    <div class="MobileBox FdcAllCenter">
+
+        <div class="closeMobileBox">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <div class="box hide">
+            
+            <div class="shopBox">
+                
+                <!-- <img src="./assets/images/cafe-img.png" alt=""> -->
+                
+                
+                <div class="ShopInfoAll">
+    
+                    
+                    <div class="Flex ShopInfo">
+    
+                        <ul class="ShopInfoText">
+                            <li>
+                                <h3>自由人咖啡廳</h3>
+                            </li>
+
+                            <li>
+                                <ul class="tagList">
+                                    <li class="tagStyle tag">可外帶</li>
+                                    <li class="tagStyle tag">信用卡付款</li>
+                                    <li class="tagStyle tag">環境舒適</li>
+                                    <li class="tagStyle tag">不限時</li>
+                                    <li class="tagStyle tag">可攜帶外食</li>
+                                    <li class="tagStyle tag">寵物止步</li>
+                                </ul>
+                            </li>
+
+                            <li class="MemberReview">
+                                
+                                <div class="MemberUserPhoto">
+                                    <img src="./assets/images/NewUser.jpg" alt="">
+                                </div>
+                                    
+                                <ul class="ReviewText">
+                                    <li>
+                                        <h3>Alston</h3>
+                                    </li>
+
+                                    <li class="test">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt laudantium ducimus natus ipsa deserunt magnam eius ipsum, earum reicie
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="MemberReview">
+                                
+                                <div class="MemberUserPhoto">
+                                    <img src="./assets/images/NewUser.jpg" alt="">
+                                </div>
+                                    
+                                <ul class="ReviewText">
+                                    <li>
+                                        <h3>Alston</h3>
+                                    </li>
+
+                                    <li class="test">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt laudantium ducimus natus ipsa deserunt magnam eius ipsum, earum reicie
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="MemberReview">
+                                
+                                <div class="MemberUserPhoto">
+                                    <img src="./assets/images/NewUser.jpg" alt="">
+                                </div>
+                                    
+                                <ul class="ReviewText">
+                                    <li>
+                                        <h3>Alston</h3>
+                                    </li>
+
+                                    <li >
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt laudantium ducimus natus ipsa deserunt magnam eius ipsum, earum reicie
+                                    </li>
+                                </ul>
+                            </li>
+                            
+    
+                        </ul>
+
+                    </div>
+    
+                    <!-- <a href="#" class="ReviewBtn">
+                        <i class="fas fa-chevron-down"></i>
+                        <p class="hint">REVIEW</p>
+                    </a>
+     -->
+    
+                </div>
+            
+                
+    
+            </div>
+    
+    
+         <!-- ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ -->
+    
+    
+    
+    
+        </div>
+    
+    </div>
+
+</div>
+        
+</div>
+
+<div class="blur">
+    <div id="map"></div>
+</div>
+
+    
+<script src="./assets/js/maps.js"></script>
+<script src="./assets/js/Cafe.js"></script>
+<script src="./assets/js/Cafe_FavCafe.js"></script>
+<script src="./assets/js/Cafe_NearbyList.js"></script>
+<script src="./assets/js/Cafe_Review.js"></script>
+<script src="./assets/js/Cafe_AddReview.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUqlo7FVQDhF2QZfRkoonNdvmhXDZQmJ4&callback=initMap"></script>
+
+
+</body>
+</html>

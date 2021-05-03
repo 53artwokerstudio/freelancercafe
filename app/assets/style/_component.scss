@@ -1,0 +1,388 @@
+//遮罩本人
+.mask{
+
+    position: fixed;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center center;
+    background-color: hsla(0,0,0, 0.8);
+    background-blend-mode: multiply;
+    
+}
+
+//盒子
+.web-box{
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+    z-index: 2;
+
+    top: 50%;
+    transform: translateY(-50%);  
+}
+
+
+.cafe-web-box{
+
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+    z-index: 2;
+
+    margin-top: 7%;
+
+}
+
+.cafe-img{
+    
+    width: 500px;
+    height: 550px;
+
+    overflow: hidden;
+
+    img{
+        min-width: 500px;
+        min-height: 100%;
+    }
+}
+
+
+.box{
+    width: 350px;
+    padding-top: $mp24;
+    padding-bottom: $mp24;
+
+
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2), inset 10px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 80px 0px 0px;
+    background: radial-gradient(68.87% 41.27% at 13.43% 0%, #A2968D 0.45%, #8B817B 100%);
+
+}
+
+.blur{
+    position: fixed;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center center;
+
+    filter: blur(5px);
+}
+
+
+//btn
+.login-btn{
+    width: 246px;
+    height: 40px;
+    border-radius: 0px 10px 0px 0px;
+    border: 0;
+    background-color: $m_gray;
+
+    margin-bottom: $mp24;
+}
+
+.login-btn[value]{
+    font-family: $TC;
+    font-size: $font-m;
+    letter-spacing: 0.05rem;
+    font-weight: "SemiBold";
+
+    color: $black;
+}
+
+.login-btn:hover{
+    color: $l_gray;
+    background-color: $black;
+}
+
+.login-btn:active{
+    background-color: $m_gray;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.MenuBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.member-btn-BackToMap{
+    font-family: $TC;
+    font-size: $font-m;
+    color: $brown;
+    background-color: $l_gray;
+
+    width: 246px;
+    height: 40px;
+    
+    border-radius: 0px 10px 0px 0px;
+    border: 1px solid $m_gray;
+
+    margin-bottom: $mp20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.member-btn-BackToMap:hover{
+    font-family: $TC;
+    font-size: $font-m;
+    color: $brown;
+    background-color: $l_gray;
+
+    width: 246px;
+    height: 40px;
+    
+    border-radius: 0px 10px 0px 0px;
+    border: 1px solid $m_gray;
+
+    margin-bottom: $mp20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.member-btn{
+    font-family: $TC;
+    font-size: $font-m;
+    color: $l_gray;
+    background-color: $brown;
+
+    width: 246px;
+    height: 40px;
+    
+    border-radius: 0px 10px 0px 0px;
+    border: 1px solid $m_gray;
+
+    margin-bottom: $mp20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.member-btn:hover{
+    font-family: $TC;
+    font-size: $font-m;
+    color: $l_gray;
+    background-color: $brown;
+
+    width: 246px;
+    height: 40px;
+    
+    border-radius: 0px 10px 0px 0px;
+    border: 1px solid $m_gray;
+
+    margin-bottom: $mp20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+
+//滿版盒子
+.full-box{
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+    
+    background: radial-gradient(68.87% 41.27% at 13.43% 0%, #A2968D 0.45%, #8B817B 100%);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2), inset 10px 10px 3px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 0px 80px 0px 0px;
+    //響應切換
+}
+
+
+//mainBar
+.mainBar{
+    position: absolute;
+    z-index: 1;
+
+    // display: flex;
+    
+    
+    // height:5%;
+    // width: 100%;
+
+    top: 1%;
+    left: 0.9%;
+}
+
+//search
+.searchBar{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+
+width: 360px;
+padding: $mp4;
+
+
+color: $brown;
+border-radius: 0px 10px 0px 0px;
+background-color: $l_gray;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.map-search{
+
+    width: 100%;
+    border: 0; 
+    background-color: transparent;
+    
+}
+
+
+.fa-search{
+    display: block;
+    margin-right: $mp8;
+    margin-left: $mp8;
+}
+
+
+
+.sortBar{
+    width: 360px;
+    
+    
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2), inset 10px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 80px 0px;
+    background: radial-gradient(68.87% 41.27% at 13.43% 0%, #A2968D 0.45%, #8B817B 100%);
+
+    position: relative;
+    z-index: 1;
+
+    
+    li{
+        
+        margin-bottom: $mp24;
+    }
+}
+
+.sortBarBtn{
+
+    min-width: 200px;
+    padding: $mp8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sortBarBtn-click{
+
+    min-width: 200px;
+    padding: $mp8;
+    background-color: $brown;
+    border-radius: 10px 0px 0px 0px;
+    box-shadow:inset 3px 3px 1px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+//Upload
+.upload-Box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom:$mp12 ;
+
+    min-width: 100%;
+
+}
+
+
+.upload-Bar{
+    width: 100%;
+    color: $brown;
+    border-radius: 0px 10px 0px 0px;
+    background-color: $l_gray;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+
+.upload-Btn{
+    padding-top: $mp12;
+
+    display: flex;
+    
+    i{padding-right: $mp8;}
+    
+    p{font-size: $font-s;}
+
+}
+
+
+//內元件關閉
+.CloseBox{
+    width: $mp24;
+    margin: 0 auto;
+    display: block;
+}
+
+.fa-times-circle{
+    color: $m_gray;
+    font-size: $font-l;
+
+    display: block;
+}
+
+.closebtn{
+ width: 20px;
+ height: 20px;
+
+ position: absolute;
+ right: $mp4;
+ top: $mp4;
+
+color: $brown;
+font-size: $mp20;
+
+}
+
+//
+.MapBackBtn{
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 360px;
+padding: $mp4;
+
+color: $l_gray;
+border-radius: 0px 10px 0px 0px;
+background-color: $brown;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 
+
+   
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- scss -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"/>
+    <!-- axios -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.js' integrity='sha512-Kg0CewqPNO/ziOJuCq5eyl3P/V6OLz/Lb1I2m+yKS3lHZcGVFN/KOew18rWP+kTsL7haYdaqGjwHQCZrN0heLQ==' crossorigin='anonymous'></script>
+
+    <title>FreelancerCafe - Cafe_FavList</title>
+</head>
+
+<body>
+
+ <div class="mask">
+
+        <!-- 網頁版顯示部分 -->
+<div class="CafeWebDnone">
+
+    <div class="cafe-web-box">
+
+        <div class="forCloseBox">
+            <div class="closeWebBox">
+                <i class="fas fa-times" id="closeFavBoxBtn"></i>
+            </div>
+        </div>
+
+        <div class="cafe-img">
+        <img src="./assets/images/cafe-img.png" alt="">
+        </div>
+    
+        <div class="box FWC">
+    
+            <div class="shopBox">
+                        
+                <div class="ShopInfoAll">
+    
+                    <div class="Flex ShopInfo">
+    
+                        <ul class="ShopInfoText">
+                            <li>
+                                <h3>愛店清單</h3>
+                            </li>
+
+                            <li>
+                                <ul class="tagList">
+                                    <li class="tagStyleHit tag d-none">可外帶</li>
+                                </ul>
+                            </li>
+
+                            <div class="shopOverBox">
+                                <ul class="" id="MemberFavShopItem">
+
+                                    <li class="MemberReview btLine" >
+
+
+                                        <div class="MemberUserPhoto">
+                                            <img src="./assets/images/NewUser.jpg" alt="">
+                                        </div>
+                                        
+
+                                        <ul class="ReviewText">
+                                            <li><h3>好想吃午餐咖啡廳</h3></li>
+                                            <li><p>高雄市楠梓區裕昌街312號1樓</br>10:00 — 21:00</p></li>   
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+
+                                <ul>
+
+                            </div>
+ 
+                            
+    
+                        </ul>
+
+                    </div>
+    
+                   <!-- <a href="#" class="ReviewBtn">
+                        <i class="fas fa-chevron-down"></i>
+                        <p class="hint">MORE</p>
+                    </a> -->
+     
+    
+                </div>
+            
+                
+    
+            </div>
+    
+            
+        </div>
+    
+    </div>
+
+</div>
+
+
+<!-- ____________________________________________ -->
+
+
+<!-- 手機版顯示部分 -->
+<div class="CafeMobileDnone d-none">
+
+    <div class="MobileBox FdcAllCenter">
+
+        <div class="closeMobileBox">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <div class="box hide">
+            
+            <div class="shopBox">
+                
+                <!-- <img src="./assets/images/cafe-img.png" alt=""> -->
+                
+                
+                <div class="ShopInfoAll">
+    
+                    <div class="Flex ShopInfo">
+    
+                        <ul class="ShopInfoText">
+                            <li>
+                                <h3>自由人咖啡廳</h3>
+                            </li>
+
+                            <li>
+                                <ul class="tagList">
+                                    <li class="tagStyleHit tag">可外帶</li>
+                                </ul>
+                            </li>
+
+                            <li class="MemberReview btLine">
+                                
+                                <div class="MemberUserPhoto">
+                                    <img src="./assets/images/NewUser.jpg" alt="">
+                                </div>
+                                    
+                                <ul class="ReviewText">
+                                    <li>
+                                        <h3>好想吃午餐咖啡廳</h3>
+                                    </li>
+
+                                    <li>
+                                        <p>高雄市楠梓區裕昌街312號1樓</p>
+                                        <p>10:00 — 21:00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="MemberReview btLine">
+                                
+                                <div class="MemberUserPhoto">
+                                    <img src="./assets/images/NewUser.jpg" alt="">
+                                </div>
+                                    
+                                <ul class="ReviewText">
+                                    <li>
+                                        <h3>好想吃午餐咖啡廳</h3>
+                                    </li>
+
+                                    <li>
+                                        <p>高雄市楠梓區裕昌街312號1樓</p>
+                                        <p>10:00 — 21:00</p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="MemberReview btLine">
+                                
+                                <div class="MemberUserPhoto">
+                                    <img src="./assets/images/NewUser.jpg" alt="">
+                                </div>
+                                    
+                                <ul class="ReviewText">
+                                    <li>
+                                        <h3>好想吃午餐咖啡廳</h3>
+                                    </li>
+
+                                    <li>
+                                        <p>高雄市楠梓區裕昌街312號1樓</p>
+                                        <p>10:00 — 21:00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+ 
+                            
+    
+                        </ul>
+
+                    </div>
+    
+                   <a href="#" class="ReviewBtn">
+                        <i class="fas fa-chevron-down"></i>
+                        <p class="hint">MORE</p>
+                    </a>
+     
+    
+                </div>
+            
+                
+    
+            </div>
+    
+    
+         <!-- ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ -->
+    
+    
+    
+    
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+        
+</div>
+
+<div class="blur">
+    <div id="map"></div>
+</div>
+
+    
+<script src="./assets/js/maps.js"></script>
+<script src="./assets/js/Cafe.js"></script>
+<script src="./assets/js/Cafe_FavCafe.js"></script>
+<script src="./assets/js/Cafe_NearbyList.js"></script>
+<script src="./assets/js/Cafe_Review.js"></script>
+<script src="./assets/js/Cafe_AddReview.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUqlo7FVQDhF2QZfRkoonNdvmhXDZQmJ4&callback=initMap"></script>
+
+
+</body>
+</html>

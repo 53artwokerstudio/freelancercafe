@@ -1,0 +1,93 @@
+// //登入
+.login-box{
+margin: $mp20 $mp40;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+    
+
+}
+
+// //註冊
+.signup-box{
+    
+    margin: $mp20 $mp40;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        
+    
+ 
+}
+
+//返信
+.signup-check-box{
+
+   .fa-paper-plane{
+        font-size: $mp40;
+        display: block;
+        text-align: center;
+        margin-bottom: $mp20;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.signup-check-box-text{
+    margin: $mp40 0;
+}
+
+
+//通用內容
+.input-box{
+    min-width: 100%;
+    margin-bottom: $mp24;
+}
+
+.input-style{
+    min-width: 100%;
+    border: 0; 
+    border-bottom: 1px solid $l_gray;
+    background-color: transparent;
+    
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+
+}
+
+.input-style::placeholder{
+    color: $l_gray;
+}
+
+.forget-password{
+    padding-top: 5px;
+    text-align: right;
+}
+
+.pass-sing-up{
+    text-align: center;
+    font-family: $TC;
+}
+
+
+//SignOut
+.SingOut{
+    width: $mp24;
+    margin: 0 auto;
+}
+
+.fa-sign-out-alt{
+    color: $m_gray;
+    font-size: $font-l;
+
+    display: block;
+}
+
+

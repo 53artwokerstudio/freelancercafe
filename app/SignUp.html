@@ -1,0 +1,90 @@
+---
+title: SignUp
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- SignUp -->
+<div class="signup-box">
+    
+    <div class="titleType">
+    <h1>Freelancer<br>CAFE’</h1>
+    <h3>Create Your Account</h3>
+    </div>
+
+    <form action="#">
+
+    <div class="input-box">
+        <label for="username">
+            <p class="hint">Username<span> * </span></p>
+        </label>
+        <input 
+        type="text"
+        name="username"
+        id="signup-username" 
+        class="input-style"
+        placeholder="請輸入名稱">
+    </div>
+
+    <div class="input-box">
+        <label for="emailadd">
+            <p class="hint">Email Address<span> * </span></p>
+        </label>
+        <input 
+        type="email"
+        name="email"
+        id="signup-emailadd" 
+        class="input-style"
+        placeholder="請輸入信箱">
+    </div>
+    
+    <div class="input-box">
+        <label for="password">
+            <p class="hint">password<span> * </span></p>
+        </label>
+        <input 
+        type="password"
+        name="password"
+        id="signup-password" 
+        class="input-style"
+        placeholder="請輸入密碼">
+        <p class="point">請輸入至少英文大小寫各一字＋數字組合密碼</p>
+    </div>
+
+        <input type="button" value="Sign Up"  id="signupbtn" class="login-btn">
+
+        
+
+    </form>
+
+    <div class="pass-sing-up">
+        <a href="./Login.html"> <i class="fas fa-arrow-left"></i> 返回登入</a>
+    </div>
+
+</div>
+
+<!-- ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ -->
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div class="blur">
+<div id="map"></div>
+</div>
+
+
+
+
+
+
+<script src="./assets/js/signup.js"></script>
+
+
+
